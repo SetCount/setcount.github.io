@@ -13,7 +13,7 @@
   <meta name="apple-mobile-web-app-title" content="SetCount" />
   <link rel="manifest" href="/site.webmanifest" />
   <title>SetCount</title>
-  <meta name="description" content="Some Cool Stuff" />
+  <meta name="description" content="A collection of cool stuff" />
   <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
     rel="stylesheet">
@@ -25,206 +25,96 @@
 
     <!-- Page Header -->
     <header class="page-header">
-      <h1><span>~/</span>projects</h1>
-      <p class="subtitle">Things I've built, broken, and occasionally shipped.</p>
+      <div class="logo-title">
+        <img src="/assets/favicon-96x96.png" />
+        <h1>
+          <span class="prefix">~/</span><span class="title-swap"><span class="title-default">SetCount</span><span class="title-hover">&nbsp;&nbsp;1-0</span></span>
+        </h1>
+      </div>
+      <p class="subtitle">A collection of cool stuff, hopefully you find it useful</p>
     </header>
 
     <!-- Example Projects -->
     <div id="projects">
 
+
+      <div class="project-col">
+        <div class="project-header">
+          <span class="project-title">FTXX</span>
+          <span class="project-tag">desktop</span>
+        </div>
+        <div class="project-img-placeholder">
+          <img src="/assets/ftxx_example.png" />
+        </div>
+        <p class="project-desc">Lightweight "First to X" score tracker for streams and locals. Point OBS at it, change
+          any settings you want, and off you go.</p>
+        <div class="download-buttons">
+          <a class="download-btn" href="/stuff/ftxx.exe" download>&#8595; Windows</a>
+          <a class="download-btn" href="/stuff/ftxx.tar.xz" download>&#8595; Linux</a>
+        </div>
+        <ul class="project-details">
+          <li>Set any "First to" goal — FT5, FT10, FT50, whatever</li>
+          <li>Score color shifts toward your accent as you approach the goal</li>
+          <li>Load any .ttf or .otf font to match your stream overlay</li>
+          <li>Settings persist between sessions</li>
+        </ul>
+      </div>
+
+
       <div class="project-col">
         <div class="project-header">
           <span class="project-title">slpmeup</span>
-          <span class="project-tag">Go</span>
+          <span class="project-tag">web app</span>
         </div>
-        <p class="project-desc">Pipeline for processing Melee .slp replays into YouTube uploads with a browsable replay
-          viewer site.</p>
-        <div class="expandable">
-          <button class="expand-trigger" aria-expanded="false">
-            <span class="arrow">▶</span> details
-          </button>
-          <div class="expand-content" aria-hidden="true">
-            <div class="expand-inner">
-              <ul>
-                <li>Discord bot with SQLite job queue</li>
-                <li>Video pipeline via slp2mp4 + ffmpeg + Xvfb</li>
-                <li>Vanilla TS frontend compiled with esbuild</li>
-                <li>Caddy reverse proxy on Hetzner VPS</li>
-              </ul>
-            </div>
-          </div>
+        <p class="project-desc">Browse Melee tournament replays, watch rendered videos, and download .slp files — all
+          from one place.</p>
+        <div class="project-links">
+          <a class="project-link" href="https://slpmeup.xyz" target="_blank" rel="noopener">slpmeup.xyz &#8599;</a>
         </div>
+        <ul class="project-details">
+          <li>Search by tournament, player, or character</li>
+          <li>Replays automatically converted to video and uploaded to YouTube</li>
+          <li>Download original .slp files to watch in Slippi</li>
+          <li>Per-game stats like stocks, characters, and stage</li>
+        </ul>
       </div>
 
-      <div class="project-col">
+      <div class="project-col wip">
         <div class="project-header">
-          <span class="project-title">swiss-bracket</span>
-          <span class="project-tag">React + Bun</span>
+          <span class="project-title">reswiss</span>
+          <span class="project-tag">web app</span>
         </div>
-        <p class="project-desc">Swiss bracket management tool for Melee tournaments with Burstein pairing and Buchholz
-          tiebreakers.</p>
-        <div class="expandable">
-          <button class="expand-trigger" aria-expanded="false">
-            <span class="arrow">▶</span> details
-          </button>
-          <div class="expand-content" aria-hidden="true">
-            <div class="expand-inner">
-              <ul>
-                <li>Rematch prevention and bye handling</li>
-                <li>Alternating standings/pairings panels</li>
-                <li>Started as a Bubble Tea TUI, rebuilt for web</li>
-              </ul>
-            </div>
-          </div>
+        <p class="project-desc">Run Swiss-format brackets with automatic pairings, tiebreakers, and no rematches.</p>
+        <div class="project-links">
+          <a class="project-link" href="https://swiss.slpmeup.xyz" target="_blank" rel="noopener">swiss.slpmeup.xyz
+            &#8599;</a>
         </div>
+        <ul class="project-details">
+          <li>Automatic round-by-round pairings based on records</li>
+          <li>Buchholz tiebreakers for fair final standings</li>
+          <li>No rematches — players never face the same opponent twice</li>
+          <li>Best-of-3 or best-of-5 format</li>
+        </ul>
       </div>
 
-      <div class="project-col">
+      <div class="project-col wip">
         <div class="project-header">
-          <span class="project-title">ftxx</span>
-          <span class="project-tag">Go + Fyne</span>
+          <span class="project-title">StreamFighter</span>
+          <span class="project-tag">desktop</span>
         </div>
-        <div class="project-img-placeholder">
-          <span>screenshot</span>
-        </div>
-        <p class="project-desc">Desktop "First to X" score tracker for 1v1 sets with live accent-color lerp, custom
-          fonts, and
-          persistent settings.</p>
-        <div class="download-buttons">
-          <a class="download-btn" href="#" download>Linux</a>
-          <a class="download-btn" href="#" download>Windows</a>
-        </div>
-        <div class="expandable">
-          <button class="expand-trigger" aria-expanded="false">
-            <span class="arrow">▶</span> details
-          </button>
-          <div class="expand-content" aria-hidden="true">
-            <div class="expand-inner">
-              <ul>
-                <li>Two-player panels with +1/-1/Reset controls</li>
-                <li>Score text color interpolates white → accent as you approach the goal</li>
-                <li>Custom .ttf/.otf font loading and configurable UI scale</li>
-                <li>Cross-compiled for Linux/Windows via fyne-cross</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-col">
-        <div class="project-header">
-          <span class="project-title">skillet</span>
-          <span class="project-tag">Go CLI</span>
-        </div>
-        <p class="project-desc">Checksum tool supporting MD5/SHA1/SHA256/SHA512 via streaming io.MultiWriter. Because
-          "making hash."</p>
-        <div class="expandable">
-          <button class="expand-trigger" aria-expanded="false">
-            <span class="arrow">▶</span> details
-          </button>
-          <div class="expand-content" aria-hidden="true">
-            <div class="expand-inner">
-              <ul>
-                <li>Charm ecosystem naming conventions</li>
-                <li>Planned RetroAchievements integration</li>
-                <li>Console-specific preprocessing subcommand</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Copiable Template -->
-    <div class="template-section">
-      <div class="template-label">template — copy &amp; paste a new project column</div>
-      <div class="code-block">
-        <button class="copy-btn" id="copyBtn">copy</button>
-        <pre><code><span class="comment">&lt;!-- Project Column --&gt;</span>
-            <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="str">"project-col"</span><span
-              class="tag">&gt;</span>
-            <span class="tag">&lt;div</span> <span class="attr">class=</span><span
-              class="str">"project-header"</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;span</span> <span class="attr">class=</span><span
-              class="str">"project-title"</span><span class="tag">&gt;</span>project-name<span
-              class="tag">&lt;/span&gt;</span>
-            <span class="tag">&lt;span</span> <span class="attr">class=</span><span
-              class="str">"project-tag"</span><span class="tag">&gt;</span>Lang<span class="tag">&lt;/span&gt;</span>
-            <span class="tag">&lt;/div&gt;</span>
-            <span class="tag">&lt;p</span> <span class="attr">class=</span><span class="str">"project-desc"</span><span
-              class="tag">&gt;</span>Short description here.<span class="tag">&lt;/p&gt;</span>
-            <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="str">"expandable"</span><span
-              class="tag">&gt;</span>
-            <span class="tag">&lt;button</span> <span class="attr">class=</span><span
-              class="str">"expand-trigger"</span> <span class="attr">aria-expanded=</span><span
-              class="str">"false"</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="str">"arrow"</span><span
-              class="tag">&gt;</span>▶<span class="tag">&lt;/span&gt;</span> details
-            <span class="tag">&lt;/button&gt;</span>
-            <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="str">"expand-content"</span>
-            <span class="attr">aria-hidden=</span><span class="str">"true"</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;div</span> <span class="attr">class=</span><span
-              class="str">"expand-inner"</span><span class="tag">&gt;</span>
-            <span class="tag">&lt;ul&gt;</span>
-            <span class="tag">&lt;li&gt;</span>Detail one<span class="tag">&lt;/li&gt;</span>
-            <span class="tag">&lt;li&gt;</span>Detail two<span class="tag">&lt;/li&gt;</span>
-            <span class="tag">&lt;/ul&gt;</span>
-            <span class="tag">&lt;/div&gt;</span>
-            <span class="tag">&lt;/div&gt;</span>
-            <span class="tag">&lt;/div&gt;</span>
-            <span class="tag">&lt;/div&gt;</span></code></pre>
-      </div>
-    </div>
-
-  </div>
-
-  <script>
-    // Expandable toggle
-    document.querySelectorAll('.expand-trigger').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const expandable = btn.closest('.expandable');
-        const content = expandable.querySelector('.expand-content');
-        const isOpen = expandable.classList.toggle('open');
-        btn.setAttribute('aria-expanded', isOpen);
-        content.setAttribute('aria-hidden', !isOpen);
-      });
-    });
-
-    // Copy template
-    const RAW_TEMPLATE = `<!-- Project Column -->
-<div class="project-col">
-  <div class="project-header">
-    <span class="project-title">project-name</span>
-    <span class="project-tag">Lang</span>
-  </div>
-  <p class="project-desc">Short description here.</p>
-  <div class="expandable">
-    <button class="expand-trigger" aria-expanded="false">
-      <span class="arrow">▶</span> details
-    </button>
-    <div class="expand-content" aria-hidden="true">
-      <div class="expand-inner">
-        <ul>
-          <li>Detail one</li>
-          <li>Detail two</li>
+        <p class="project-desc">Desktop scoreboard manager for tournament streams. Update player names, scores,
+          characters, and casters — changes push to OBS overlays in real time.</p>
+        <ul class="project-details">
+          <li>Pull brackets and sets directly from start.gg</li>
+          <li>Player and caster presets so you don't re-type regulars</li>
+          <li>Character and costume portraits on the overlay</li>
+          <li>Customizable overlay colors, fonts, and layout</li>
+          <li>Game pack system — add any game, not just Melee</li>
         </ul>
       </div>
     </div>
   </div>
-</div>`;
 
-    document.getElementById('copyBtn').addEventListener('click', function () {
-      navigator.clipboard.writeText(RAW_TEMPLATE).then(() => {
-        this.textContent = 'copied!';
-        this.classList.add('copied');
-        setTimeout(() => {
-          this.textContent = 'copy';
-          this.classList.remove('copied');
-        }, 1500);
-      });
-    });
-  </script>
 
 </body>
 
