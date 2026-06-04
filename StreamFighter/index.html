@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="SetCount" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <title>StreamFighter - SetCount</title>
+  <meta name="description"
+    content="Desktop scoreboard manager for tournament streams, pushing live info to OBS overlays" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="page-header">
+      <div class="logo-title">
+        <img src="/assets/favicon-96x96.png" />
+        <h1>
+          <a href="/" class="back-link"><span class="back-arrow">&#8592;</span><span
+              class="prefix">~/</span>SetCount</a>
+        </h1>
+      </div>
+    </header>
+
+    <div class="subpage wide">
+      <div class="subpage-hero">
+        <div class="subpage-title-row">
+          <h2 class="subpage-title">StreamFighter</h2>
+          <span class="project-tag">desktop</span>
+        </div>
+        <p class="subpage-subtitle">Desktop scoreboard manager for tournament streams. Update player names, scores,
+          characters, and casters — changes push to your OBS overlays in real time.</p>
+        <div class="download-buttons">
+          <a class="download-btn" href="/stuff/streamfighter.exe" download>&#8595; Windows</a>
+          <a class="download-btn" href="/stuff/streamfighter.tar.xz" download>&#8595; Linux</a>
+          <a class="download-btn game-packs-btn" href="https://github.com/SetCount/StreamFighterPacks/releases"
+            target="_blank" rel="noopener">Game Packs &#8599;</a>
+        </div>
+      </div>
+
+      <div class="subpage-split">
+        <div class="subpage-col">
+          <div class="subpage-section">
+            <h3 class="subpage-section-title">Features</h3>
+            <ul class="project-details">
+              <li>Pull brackets and sets directly from start.gg — pick a set and it fills in players, round, and
+                best-of</li>
+              <li>Player and caster presets so you never re-type your regulars</li>
+              <li>Character and costume portraits rendered right on the overlay</li>
+              <li>Customizable overlay colors, fonts, and layouts (dual sidebar, single sidebar, between-games scene)
+              </li>
+              <li>Game pack system — drop in art for any game, not just Melee</li>
+              <li>Outputs to OBS three ways: browser-source overlays, per-field text files, and a JSON snapshot</li>
+              <li>Settings and presets persist between sessions</li>
+            </ul>
+          </div>
+
+          <div class="subpage-section">
+            <h3 class="subpage-section-title">Getting started</h3>
+            <ul class="project-details">
+              <li>Download and run StreamFighter for your platform above</li>
+              <li>In OBS, add a <strong>Browser</strong> source pointing at <code>http://localhost:35920/game</code>
+                (and
+                <code>http://localhost:35920/between</code> for the between-games scene)
+              </li>
+              <li>Drop your character art into the <code>games/&lt;game&gt;/characters/</code> folders (portraits +
+                stock
+                icons)</li>
+              <li>Paste your start.gg API token in Settings to enable bracket and set pulling</li>
+              <li>Edit players, scores, and casters in the app — everything updates the overlay automatically</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="subpage-gallery">
+          <figure>
+            <a class="subpage-screenshot" href="/assets/streamfighter_app_example.png" target="_blank" rel="noopener">
+              <img src="/assets/streamfighter_app_example.png" />
+            </a>
+            <figcaption>Player info — names, scores, characters, casters</figcaption>
+          </figure>
+          <figure>
+            <a class="subpage-screenshot" href="/assets/streamfighter_overlay.png" target="_blank" rel="noopener">
+              <img src="/assets/streamfighter_overlay.png" />
+            </a>
+            <figcaption>Live OBS overlay</figcaption>
+          </figure>
+          <figure>
+            <a class="subpage-screenshot" href="/assets/streamfighter_startgg.png" target="_blank" rel="noopener">
+              <img src="/assets/streamfighter_startgg.png" />
+            </a>
+            <figcaption>Pull sets from start.gg</figcaption>
+          </figure>
+          <figure>
+            <a class="subpage-screenshot" href="/assets/streamfighter_presets.png" target="_blank" rel="noopener">
+              <img src="/assets/streamfighter_presets.png" />
+            </a>
+            <figcaption>Player &amp; caster presets</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -250,6 +250,13 @@
   	transform: translateY(-1px);
   }
 
+  .game-packs-btn {
+  	white-space: nowrap;
+  	color: var(--text);
+  	background: color-mix(in srgb, #9B1EC9 12%, transparent);
+  	border: 1px solid #9B1EC9;
+  }
+
   /* ── Project Details ── */
   .project-details {
   	list-style: none;
@@ -372,15 +379,60 @@
   }
 
   .subpage-screenshot {
+  	display: block;
   	border: 1px solid var(--border);
   	border-radius: var(--radius);
   	overflow: hidden;
   	margin-bottom: 2.5rem;
   }
 
+  a.subpage-screenshot {
+  	transition: border-color 0.15s ease;
+  }
+
+  a.subpage-screenshot:hover {
+  	border-color: var(--accent);
+  }
+
   .subpage-screenshot img {
   	width: 100%;
   	display: block;
+  }
+
+  /* ── Subpage split (sections + gallery) ── */
+  .subpage.wide {
+  	max-width: 1400px;
+  }
+
+  .subpage-split {
+  	display: grid;
+  	grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  	gap: 3rem;
+  	align-items: start;
+  }
+
+  .subpage-gallery {
+  	display: flex;
+  	flex-direction: column;
+  	gap: 1.5rem;
+  	position: sticky;
+  	top: 2rem;
+  }
+
+  .subpage-gallery figure {
+  	margin: 0;
+  }
+
+  .subpage-gallery .subpage-screenshot {
+  	margin-bottom: 0;
+  }
+
+  .subpage-gallery figcaption {
+  	font-family: var(--mono);
+  	font-size: 0.8rem;
+  	color: var(--text-muted);
+  	margin-top: 0.5rem;
+  	letter-spacing: 0.02em;
   }
 
   .subpage-section {
@@ -396,6 +448,19 @@
   }
 
   /* ── Responsive ── */
+  @media (max-width: 860px) {
+  	.subpage-split {
+  		grid-template-columns: 1fr;
+  		gap: 0;
+  	}
+
+  	.subpage-gallery {
+  		position: static;
+  		margin-bottom: 2.5rem;
+  		order: -1;
+  	}
+  }
+
   @media (max-width: 520px) {
   	body {
   		padding: 2.5rem 1.4rem;
