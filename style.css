@@ -250,6 +250,16 @@
   	transform: translateY(-1px);
   }
 
+  /* ── Inline Code ── */
+  code {
+  	font-family: var(--mono);
+  	color: #ff4fd8;
+  	background: rgba(255, 79, 216, 0.1);
+  	border-radius: 4px;
+  	padding: 0.15em 0.4em;
+  	font-size: 0.9em;
+  }
+
   .game-packs-btn {
   	white-space: nowrap;
   	color: var(--text);

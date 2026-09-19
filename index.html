@@ -1,128 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="SetCount" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>SetCount</title>
+    <meta name="description" content="A collection of cool stuff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-  <link rel="shortcut icon" href="/assets/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="SetCount" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <title>SetCount</title>
-  <meta name="description" content="A collection of cool stuff" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Sora:wght@300;400;600;700&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-
-  <div class="container">
-
-    <!-- Page Header -->
-    <header class="page-header">
-      <div class="logo-title">
-        <img src="/assets/favicon-96x96.png" />
-        <h1>
-          <span class="prefix">~/</span><span class="title-swap"><span class="title-default">SetCount</span><span class="title-hover">&nbsp;&nbsp;1-0</span></span>
-        </h1>
-      </div>
-      <p class="subtitle">A collection of cool stuff, hopefully you find it useful</p>
-    </header>
-
-    <!-- Example Projects -->
-    <div id="projects">
-
-
-      <div class="project-col">
-        <a class="project-header" href="/ftxx/">
-          <span class="project-title">FTXX</span>
-          <span class="project-tag">desktop</span>
-        </a>
-        <div class="project-img-placeholder">
-          <img src="/assets/ftxx_example.png" />
+  <body>
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <div class="logo-title">
+          <img src="/assets/favicon-96x96.png" />
+          <h1>
+            <span class="prefix">~/</span
+            ><span class="title-swap"
+              ><span class="title-default">SetCount</span
+              ><span class="title-hover">&nbsp;&nbsp;1-0</span></span
+            >
+          </h1>
         </div>
-        <p class="project-desc">Lightweight "First to X" score tracker for streams and locals. Point OBS at it, change
-          any settings you want, and off you go.</p>
-        <div class="download-buttons">
-          <a class="download-btn" href="/stuff/ftxx.exe" download>&#8595; Windows</a>
-          <a class="download-btn" href="/stuff/ftxx.tar.gz" download>&#8595; Linux</a>
-        </div>
-        <ul class="project-details">
-          <li>Set any "First to" goal — FT5, FT10, FT50, whatever</li>
-          <li>Score color shifts toward your accent as you approach the goal</li>
-          <li>Load any .ttf or .otf font to match your stream overlay</li>
-          <li>Settings persist between sessions</li>
-        </ul>
-      </div>
+        <p class="subtitle">
+          A collection of cool stuff, hopefully you find it useful
+        </p>
+      </header>
 
+      <!-- Example Projects -->
+      <div id="projects">
+        <div class="project-col">
+          <a class="project-header" href="/ftxx/">
+            <span class="project-title">FTXX</span>
+            <span class="project-tag">desktop</span>
+          </a>
+          <div class="project-img-placeholder">
+            <img src="/assets/ftxx_example.png" />
+          </div>
+          <p class="project-desc">
+            Lightweight "First to X" score tracker for streams and locals. Point
+            OBS at it, change any settings you want, and off you go.
+          </p>
+          <div class="download-buttons">
+            <a class="download-btn" href="/stuff/ftxx.exe" download
+              >&#8595; Windows</a
+            >
+            <a class="download-btn" href="/stuff/ftxx.tar.gz" download
+              >&#8595; Linux</a
+            >
+          </div>
+          <ul class="project-details">
+            <li>Set any "First to" goal — FT5, FT10, FT50, whatever</li>
+            <li>
+              Score color shifts toward your accent as you approach the goal
+            </li>
+            <li>Load any .ttf or .otf font to match your stream overlay</li>
+            <li>Settings persist between sessions</li>
+          </ul>
+        </div>
 
-      <div class="project-col">
-        <div class="project-header">
-          <span class="project-title">slpmeup</span>
-          <span class="project-tag">web app</span>
+        <div class="project-col">
+          <div class="project-header">
+            <span class="project-title">slpmeup</span>
+            <span class="project-tag">web app</span>
+          </div>
+          <p class="project-desc">
+            Browse Melee tournament replays, watch rendered videos, and download
+            .slp files — all from one place.
+          </p>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://slpmeup.xyz"
+              target="_blank"
+              rel="noopener"
+              >slpmeup.xyz &#8599;</a
+            >
+          </div>
+          <ul class="project-details">
+            <li>Search by tournament, player, or character</li>
+            <li>
+              Replays automatically converted to video and uploaded to YouTube
+            </li>
+            <li>Download original .slp files to watch in Slippi</li>
+            <li>Per-game stats like stocks, characters, and stage</li>
+          </ul>
         </div>
-        <p class="project-desc">Browse Melee tournament replays, watch rendered videos, and download .slp files — all
-          from one place.</p>
-        <div class="project-links">
-          <a class="project-link" href="https://slpmeup.xyz" target="_blank" rel="noopener">slpmeup.xyz &#8599;</a>
-        </div>
-        <ul class="project-details">
-          <li>Search by tournament, player, or character</li>
-          <li>Replays automatically converted to video and uploaded to YouTube</li>
-          <li>Download original .slp files to watch in Slippi</li>
-          <li>Per-game stats like stocks, characters, and stage</li>
-        </ul>
-      </div>
 
-      <div class="project-col wip">
-        <div class="project-header">
-          <span class="project-title">reswiss</span>
-          <span class="project-tag">web app</span>
+        <div class="project-col wip">
+          <div class="project-header">
+            <span class="project-title">reswiss</span>
+            <span class="project-tag">web app</span>
+          </div>
+          <p class="project-desc">
+            Run Swiss-format brackets with automatic pairings, tiebreakers, and
+            no rematches.
+          </p>
+          <div class="project-links">
+            <a
+              class="project-link"
+              href="https://swiss.slpmeup.xyz"
+              target="_blank"
+              rel="noopener"
+              >swiss.slpmeup.xyz &#8599;</a
+            >
+          </div>
+          <ul class="project-details">
+            <li>Automatic round-by-round pairings based on records</li>
+            <li>Buchholz tiebreakers for fair final standings</li>
+            <li>No rematches — players never face the same opponent twice</li>
+            <li>Best-of-3 or best-of-5 format</li>
+          </ul>
         </div>
-        <p class="project-desc">Run Swiss-format brackets with automatic pairings, tiebreakers, and no rematches.</p>
-        <div class="project-links">
-          <a class="project-link" href="https://swiss.slpmeup.xyz" target="_blank" rel="noopener">swiss.slpmeup.xyz
-            &#8599;</a>
-        </div>
-        <ul class="project-details">
-          <li>Automatic round-by-round pairings based on records</li>
-          <li>Buchholz tiebreakers for fair final standings</li>
-          <li>No rematches — players never face the same opponent twice</li>
-          <li>Best-of-3 or best-of-5 format</li>
-        </ul>
-      </div>
 
-      <div class="project-col">
-        <a class="project-header" href="/stream-fighter/">
-          <span class="project-title">StreamFighter</span>
-          <span class="project-tag">desktop</span>
-        </a>
-        <div class="project-img-placeholder">
-          <img src="/assets/stream-fighter_app_example.png" />
+        <div class="project-col">
+          <a class="project-header" href="/stream-fighter/">
+            <span class="project-title">StreamFighter</span>
+            <span class="project-tag">desktop</span>
+          </a>
+          <div class="project-img-placeholder">
+            <img src="/assets/stream-fighter_app_example.png" />
+          </div>
+          <p class="project-desc">
+            Desktop scoreboard manager for tournament streams. Update player
+            names, scores, characters, and casters — changes push to OBS
+            overlays in real time.
+          </p>
+          <div class="download-buttons">
+            <a class="download-btn" href="/stuff/stream-fighter.exe" download
+              >&#8595; Windows</a
+            >
+            <a class="download-btn" href="/stuff/stream-fighter.tar.gz" download
+              >&#8595; Linux</a
+            >
+          </div>
+          <ul class="project-details">
+            <li>Pull brackets and sets directly from start.gg</li>
+            <li>Player and caster presets so you don't re-type regulars</li>
+            <li>Character and costume portraits on the overlay</li>
+            <li>Customizable overlay colors, fonts, and layout</li>
+            <li>Game pack system — add any game, not just Melee</li>
+          </ul>
         </div>
-        <p class="project-desc">Desktop scoreboard manager for tournament streams. Update player names, scores,
-          characters, and casters — changes push to OBS overlays in real time.</p>
-        <div class="download-buttons">
-          <a class="download-btn" href="/stuff/stream-fighter.exe" download>&#8595; Windows</a>
-          <a class="download-btn" href="/stuff/stream-fighter.tar.gz" download>&#8595; Linux</a>
+
+        <div class="project-col">
+          <a class="project-header" href="/sandbag-suite/">
+            <span class="project-title">Sandbag Suite</span>
+            <span class="project-tag">P+ Mod</span>
+          </a>
+          <div class="project-img-placeholder">
+            <img src="/assets/sandbag-suite-example.png" />
+          </div>
+          <p class="project-desc">
+            A Project+ mod intended to make practicing and training easier and
+            quicker.
+          </p>
+          <div class="download-buttons">
+            <a class="download-btn" href="/stuff/SandbagSuite.rel" download
+              >&#8595; .rel</a
+            >
+          </div>
+          <ul class="project-details">
+            <li>Ledgedash training, with auto-ledge return</li>
+            <li>Input visualization</li>
+          </ul>
         </div>
-        <ul class="project-details">
-          <li>Pull brackets and sets directly from start.gg</li>
-          <li>Player and caster presets so you don't re-type regulars</li>
-          <li>Character and costume portraits on the overlay</li>
-          <li>Customizable overlay colors, fonts, and layout</li>
-          <li>Game pack system — add any game, not just Melee</li>
-        </ul>
       </div>
     </div>
-  </div>
-
-
-</body>
-
+  </body>
 </html>
